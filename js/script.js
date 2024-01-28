@@ -44,7 +44,7 @@ const optArticleSelector = '.post',
     optTitleListSelector = '.titles';
 
 function generateTitleLinks() {
-    console.log('Function \generateTitleLinks\ is called');
+    console.log('Function \'generateTitleLinks\' is called');
 
     /* [DONE] remove contents of titleList */
     const titleList = document.querySelector(optTitleListSelector);
@@ -67,7 +67,7 @@ function generateTitleLinks() {
 
         /* find the title element */
         let articleTitleElement = article.querySelector(optTitleSelector)
-        
+
         /* get the title from the title element */
         let articleTitle = articleTitleElement.innerHTML;
         console.log('articleTitle: ', articleTitle);
