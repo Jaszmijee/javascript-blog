@@ -11,7 +11,7 @@
     "test": "npm-run-all test:*",
     "test:html": "html-validate *.html",
     "test:js": "eslint js/",
-	"test:scss": "stylelint sass/",
+    "test:scss": "stylelint sass/",
     "build": "npm-run-all build:* test",
     "build:sass": "sass --style=compressed --no-source-map sass:css",
     "build:autoprefixer": "postcss css/*.css --use autoprefixer -d css",
@@ -20,7 +20,7 @@
     "watch": "npm-run-all build:* build-dev -p watch:*",
     "watch:browsersync": "browser-sync start --server --files \"css/*.css\" \"*.html\" \"js/*.js\"",
     "watch:sassprefixer": "onchange sass/*.scss -- npm run build-dev",
-    "watch:eslint" :"esw --watch --changed --clear \"js/*.js\""
+    "watch:eslint": "esw --watch --changed --clear \"js/*.js\""
   },
   "keywords": [],
   "author": "",
@@ -37,6 +37,10 @@
     "onchange": "^5.2.0",
     "postcss": "^8.2.6",
     "postcss-cli": "^8.3.1",
-    "sass": "^1.44.0"
+    "sass": "^1.44.0",
+    "stylelint": "^16.2.0",
+    "stylelint-config-recommended-scss": "^14.0.0",
+    "stylelint-config-standard-scss": "^13.0.0",
+    "stylelint-scss": "^6.1.0"
   }
 }
