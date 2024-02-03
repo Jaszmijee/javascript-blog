@@ -112,10 +112,12 @@ body {
     margin: 0;
     padding: 0;
 
-    .active {
+     .active {
         font-weight: bold;
+         background-color: lighten($color-dark, 60%);
     }
 }
+
 
 .list-horizontal {
     li {
@@ -180,7 +182,6 @@ body {
         display: flex;
         flex-wrap: wrap;
         flex-direction: row;
-
     }
 
     .sidebar li {
@@ -192,9 +193,16 @@ body {
         text-align: center;
     }
 
-    .list.titles li.active {
-        font-weight: bold;
-        background-color: lighten($color-dark, 20%);
+    .sidebar ul.list.tags li, ul.list.authors li {
+        display: flex;
+        margin: 10px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .sidebar ul.list.tags, ul.list.authors {
+        display: flex;
+        margin: 10px;
     }
 
     .posts {
